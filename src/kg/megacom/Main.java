@@ -35,7 +35,7 @@ public class Main {
             return false;
         };
 
-        thing.forEach(Clothes -> System.out.println(inMyWardrobe.choose(Clothes) && season.choose(Clothes) && color.choose(Clothes)));
+        thing.forEach(Clothes -> System.out.println(inMyWardrobe.wear(Clothes) && season.wear(Clothes) && color.wear(Clothes)));
 
 
     }
@@ -46,5 +46,5 @@ public class Main {
 
 @FunctionalInterface
 interface Searchable{
-    boolean choose(Clothes clothes);
+    boolean wear(Clothes clothes);
 }
